@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:hover {
+            color: red;
+        }
+
+        button:active {
+            background-color: green;
+            color: white;
+        }
+
+        input:focus {
+            border: 2px solid blue;
+            background-color: lightyellow;
+        }
+
+        li:first-child {
+            color: red;
+        }
+
+        li:last-child {
+            color: blue;
+        }
+
+        li:nth-child(2) {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Pseudo-class Selector Demo</h2>
+
+
+    <p>
+        <a href="#">Hover over this link</a>
+    </p>
+
+    <button>Click Me</button>
+
+    <br><br>
+
+    <input type="text" placeholder="Click here to focus">
+
+    <br><br>
+
+    <ul>
+        <li>Item 1 (First Child - Red)</li>
+        <li>Item 2 (Nth Child - Green)</li>
+        <li>Item 3</li>
+        <li>Item 4 (Last Child - Blue)</li>
+    </ul>
+
+</body>
+</html>

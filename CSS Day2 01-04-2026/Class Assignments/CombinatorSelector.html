@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            color: red;
+        }
+
+        div > h3 {
+            color: blue;
+        }
+
+        h2 + p {
+            background-color: yellow;
+        }
+
+        h1 ~ p {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>General Sibling Example</h1>
+    <p>This paragraph gets green border</p>
+    <p>This also gets green border</p>
+
+    <h2>Adjacent Sibling Example</h2>
+    <p>This gets yellow background</p>
+    <p>This does NOT get yellow</p>
+
+    <div>
+        <h3>Direct Child (Blue)</h3>
+
+        <p>Descendant (Red)</p>
+
+        <section>
+            <p>Also Descendant (Red)</p>
+        </section>
+    </div>
+
+</body>
+</html>

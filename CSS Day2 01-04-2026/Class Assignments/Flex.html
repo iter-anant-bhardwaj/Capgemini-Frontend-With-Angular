@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+
+            background-color: bisque;
+
+            /* flex-direction: row;
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* justify-content: space-around; */
+            justify-content: space-evenly;
+            /* justify-content: space-between; */
+
+            /* gap: 10px; */
+
+            /* align-items: stretch; */
+            align-items: center;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: baseline; */
+            /* align-items: last baseline; */
+
+            border: 2px solid;
+
+            width: 500px;
+            height: 500px;
+
+        }
+
+        .inside {
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+            padding: 0px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="inside">1</div>
+        <div class="inside">2</div>
+        <div class="inside" style="height: 200px;">3</div>
+    </div>
+</body>
+
+</html>

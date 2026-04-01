@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            /* width: 100%; */
+            background: #dfe3e8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #f5f7f9;
+            width: 420px;
+            padding: 40px 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(6, 1, 1, 0.3);
+
+        }
+
+        .image {
+            background-image: url(Profile.jpg);
+            width: 150px;
+            height: 140px;
+            margin: 0 auto 20px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            border: 4px solid #6a5acd;
+
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            color: #666;
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #b5aeae;
+            margin: 25px 0;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .stats div {
+            text-align: center;
+            flex: 1;
+        }
+
+        .stats h2 {
+            color: #6a5acd;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .inner {
+            color: #999;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image">
+        </div>
+        <div class="name">
+            <h1>Raj Sharma</h1>
+        </div>
+        <p class="bio">
+            Senior Software Architect with a passion for building scalable, high-performance systems and mentoring
+            the next generation of developers.
+        </p>
+
+        <hr class="divider">
+
+        <div class="stats">
+            <div>
+                <h2>12+</h2>
+                <div class="inner">YEARS XP</div>
+            </div>
+            <div>
+                <h2>45</h2>
+                <div class="inner">PROJECTS</div>
+            </div>
+            <div>
+                <h2>3.2k</h2>
+                <div class="inner">STARS</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
