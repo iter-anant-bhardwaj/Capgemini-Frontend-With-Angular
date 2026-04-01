@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Registration Form</legend>
+
+            <table align="center">
+                <tr>
+                    <td><label for="name">Employee Name</label></td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="job">Job</label></td>
+                    <td>
+                        <select id="job">
+                            <option>Select A Job</option>
+                            <option>Manager</option>
+                            <option>Developer</option>
+                            <option>Tester</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="repassword">Re-enter password</label></td>
+                    <td><input type="password" id="repassword" placeholder="Confirm your password"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="birthday">Birthday</label></td>
+                    <td><input type="date" id="birthday"></td>
+                </tr>
+                <tr>
+                    <td><label for="salary">Salary</label></td>
+                    <td><input type="number" id="salary"></td>
+                </tr>
+                <tr>
+                    <td><label for="commission">Commission</label></td>
+                    <td><input type="number" id="commission"></td>
+                </tr>
+                <tr>
+                    <td><label for="tsalary">Total Salary</label></td>
+                    <td><input type="number" id="tsalary" placeholder="NaN"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
