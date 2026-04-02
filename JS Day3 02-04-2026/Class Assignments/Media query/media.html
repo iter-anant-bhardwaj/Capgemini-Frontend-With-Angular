@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            height: 70px;
+            background-color: yellow;
+        }
+
+        body>div{
+            height: 400px; 
+            width: 400px;
+            border: solid 3px red;
+            display: flex;
+        }
+
+        div div{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border: solid 3px white;
+        }
+
+        @media screen and (max-width:500px) {
+            nav {
+                background-color: red;
+            }
+            p {
+                display: none;
+                visibility: hidden;
+            }  
+            body>div{
+                flex-direction: column;
+            }  
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav></nav>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus repellendus commodi tempora. Sequi quaerat
+        blanditiis temporibus quod nulla asperiores quibusdam animi nobis accusamus soluta voluptatum saepe a, tempore
+        quas sapiente.
+        Sunt inventore qui quas excepturi reprehenderit sed! Hic eum nemo tempore distinctio ea, saepe voluptatum cumque
+        eaque voluptatem sequi possimus magnam, illum in laborum labore, a maxime asperiores illo? Consectetur!
+    </p>
+
+    <h1>Heading</h1>
+
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

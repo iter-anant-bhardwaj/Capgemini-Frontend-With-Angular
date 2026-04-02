@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static-box {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .relative-box {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        .parent {
+            position: relative;
+            height: 150px;
+            background-color: lightblue;
+            margin: 20px;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: red;
+            color: white;
+            padding: 5px;
+        }
+
+        .fixed-box {
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            /* background-color: purple; */
+            color: white;
+            padding: 10px;
+            background-image: url(https://cdn.jsdelivr.net/gh/corover/assets@UIChange2/askdisha-bucket/FLauncher.gif);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+        }
+
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: orange;
+            padding: 10px;
+        }
+
+        .content {
+            height: 1500px;
+            padding: 20px;
+        }
+        /* .fixed-box img{
+            height: 50px;
+            width: 50px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="static-box">STATIC (default position)</div>
+
+    <div class="relative-box">RELATIVE (moved from original position)</div>
+
+    <div class="parent">
+        RELATIVE PARENT
+        <div class="absolute-box">
+            ABSOLUTE (top-right of parent)
+        </div>
+    </div>
+
+    <div class="sticky-box">
+        STICKY (sticks when you scroll)
+    </div>
+
+    <div class="content">
+        Scroll down to see FIXED & STICKY in action...
+    </div>
+
+    <div class="fixed-box">
+        <!-- <img src="https://cdn.jsdelivr.net/gh/corover/assets@UIChange2/askdisha-bucket/FLauncher.gif" alt="Open Disha chat" role="img" style="width: 100%;"> -->
+    </div>
+
+</body>
+
+</html>
