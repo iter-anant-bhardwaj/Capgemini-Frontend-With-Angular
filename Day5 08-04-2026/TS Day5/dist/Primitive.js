@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+let age = 21;
+let price = 99.99;
+console.log(age, price);
+let name = "Anant";
+console.log(name);
+let val = true;
+console.log(val);
+let n = null;
+let u = undefined;
+console.log(n, u);

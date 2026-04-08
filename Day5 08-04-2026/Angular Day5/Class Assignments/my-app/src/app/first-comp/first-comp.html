@@ -1,0 +1,11 @@
+<p>first-comp works!</p>
+<h1>Component</h1>
+<h1 [style] = "style" [hidden] = "isHidden">{{name}}</h1>
+
+<button (click)="click()">Click Me</button>
+
+<h1>{{ipVal}}</h1>
+
+<!-- <input type="text" (input) = "inputValChange($event.target.value)" [value]="ipVal"> -->
+
+<input type="text" [(ngModel)]="ipVal">
