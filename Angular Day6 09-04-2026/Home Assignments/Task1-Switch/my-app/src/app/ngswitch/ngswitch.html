@@ -1,0 +1,12 @@
+<h1>Ng Switch</h1>
+
+
+Role: <input type="text" #roleElement>
+<button (click)="setRole(roleElement.value)">Set Role</button>
+<div [ngSwitch]="role">
+    <p *ngSwitchCase="'admin'">Welcome Admin</p>
+    <p *ngSwitchCase="'user'">Welcome User</p>
+    <p *ngSwitchCase="'guest'">Welcome Guest</p>
+
+    <p *ngSwitchDefault>Unknown Role</p>
+</div>

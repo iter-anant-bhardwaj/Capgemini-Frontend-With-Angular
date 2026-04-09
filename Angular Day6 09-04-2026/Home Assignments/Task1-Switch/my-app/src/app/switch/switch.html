@@ -1,0 +1,21 @@
+<h1>Switch</h1>
+
+
+Role: <input type="text" #roleElement>
+<button (click)="setRole(roleElement.value)">Set Role</button>
+
+@switch (role) {
+
+  @case ('admin') {
+    <p>Welcome Admin</p>
+  }
+  @case ('user') {
+    <p>Welcome User</p>
+  }
+  @case ('guest') {
+    <p>Welcome Guest</p>
+  }
+  @default {
+    <p>Unknown Role</p>
+  }
+}

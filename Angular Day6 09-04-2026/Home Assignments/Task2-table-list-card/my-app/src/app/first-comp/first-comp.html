@@ -1,0 +1,50 @@
+<button (click)="setView('list')">List</button>
+<button (click)="setView('table')">Table</button>
+<button (click)="setView('card')">Card</button>
+
+@switch(view){
+@case('list'){
+<h2>Student List</h2>
+<ul>
+    @for(student of students; track student){
+    <li>
+        {{student.id}} - {{student.name}} -  {{student.age}} - {{student.course}}
+    </li>
+    }
+</ul>
+}
+
+@case('table'){
+<h2>Student Table</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+    </tr>
+    @for(student of students; track student){
+    <tr>
+        <td>{{student.id}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.age}}</td>
+        <td>{{student.course}}</td>
+    </tr>
+    }
+</table>
+}
+
+@case('card'){
+<h2>Student Card</h2>
+<div class="cards">
+    @for(student of students; track student){
+    <div class="card">
+        <p>{{student.id}}</p>
+        <h3>{{student.name}}</h3>
+        <p>Age: {{ student.age }}</p>
+        <p>Course: {{ student.course }}</p>
+    </div>
+    }
+</div>
+}
+}
