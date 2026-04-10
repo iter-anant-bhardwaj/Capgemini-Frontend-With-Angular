@@ -1,0 +1,50 @@
+<h1>You are in Home component</h1>
+
+<!-- <table mat-table [dataSource]="data" border="">
+    <tr>
+        <th mat-header-cell>SNO</th>
+        <th mat-header-cell>Name</th>
+        <th mat-header-cell>Age</th>
+        <th mat-header-cell>Qualification</th>
+    </tr>
+    @for(student of data; track $index){
+        <tr>
+            <td mat-cell>{{student.id}}</td>
+            <td mat-cell>{{student.name}}</td>
+            <td mat-cell>{{student.age}}</td>
+            <td mat-cell>{{student.qualification}}</td>
+        </tr>
+    }
+</table> -->
+
+<table mat-table [dataSource]="data">
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> id </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="age">
+    <th mat-header-cell *matHeaderCellDef> Age </th>
+    <td mat-cell *matCellDef="let element"> {{element.age}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="qualification">
+    <th mat-header-cell *matHeaderCellDef> Qualification </th>
+    <td mat-cell *matCellDef="let element"> {{element.qualification}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+
+<button matButton="outlined">Click Me</button>

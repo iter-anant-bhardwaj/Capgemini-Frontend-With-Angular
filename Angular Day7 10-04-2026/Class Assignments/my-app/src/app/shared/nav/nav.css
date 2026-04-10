@@ -1,0 +1,15 @@
+nav{
+    display: flex;
+    gap: 20px;
+    height: 70px;
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    align-items: center;
+    padding-left: 20px;
+}
+
+.active{
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
+    padding: 10px;
+
+}

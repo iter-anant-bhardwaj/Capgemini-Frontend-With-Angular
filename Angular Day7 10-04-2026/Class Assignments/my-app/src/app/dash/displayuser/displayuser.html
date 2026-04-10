@@ -1,0 +1,18 @@
+
+<!-- @for (item of userService.userData; track $index) {
+  <p>{{ item | json }}</p>
+} -->
+<h1>Users List</h1>
+
+<div class="user-container">
+  @for (item of userService.userData; track $index) {
+    <div class="user-card">
+      <img [src]="item.image" alt="user" />
+
+      <div class="user-info">
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.role }}</p>
+      </div>
+    </div>
+  }
+</div>

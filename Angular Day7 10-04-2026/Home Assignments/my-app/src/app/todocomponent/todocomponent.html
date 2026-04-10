@@ -1,0 +1,45 @@
+<h1>ToDo App</h1>
+<button class="top-btn" (click)="view='add'">Add Task</button>
+<button class="top-btn" (click)="view='list'">All Tasks</button>
+
+<hr>
+
+@if (view === 'add') {
+  <div>
+    <input [(ngModel)]="taskInput" placeholder="Enter task">
+    <button (click)="addTask()">Add</button>
+  </div>
+
+}
+@if (view === 'list') {
+  <button (click)="filter='all'">All</button>
+  <button (click)="filter='pending'">Pending</button>
+  <button (click)="filter='finished'">Finished</button>
+
+  <hr>
+
+  @for (task of tasks; track task) {
+    <div style="margin:10px; border:1px solid gray; padding:10px;">
+      @if (task.status === 'finished') {
+        <s>{{task.title}}</s>
+      } @else {
+        {{task.title}}
+      }
+
+      <br><br>
+
+      <button (click)="toggle(task)">
+        @if (task.status === 'pending') {
+          Mark Finished
+        } @else {
+          Mark Pending
+        }
+      </button>
+
+      <button class="del-btn" (click)="delete(task)">Delete</button>
+
+    </div>
+
+  }
+
+}
