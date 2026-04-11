@@ -1,0 +1,11 @@
+<p>http works!</p>
+@for(item of userData(); track $index){
+    <p>{{item | json}}</p>
+}
+@empty{
+    <h1>No Data Found</h1>
+}
+
+<button (click)="addNewUser()">Add New User</button>
+
+<button (click)="login()">Login</button>
